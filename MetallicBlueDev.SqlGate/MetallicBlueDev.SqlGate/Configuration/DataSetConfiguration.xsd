@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetConfiguration" targetNamespace="http://tempuri.org/DataSetConfiguration.xsd" xmlns:mstns="http://tempuri.org/DataSetConfiguration.xsd" xmlns="http://tempuri.org/DataSetConfiguration.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetConfiguration" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetConfiguration" msprop:Generator_UserDSName="DataSetConfiguration">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SqlGateConfig" msprop:Generator_TableClassName="SqlGateConfigDataTable" msprop:Generator_TableVarName="tableSqlGateConfig" msprop:Generator_TablePropName="SqlGateConfig" msprop:Generator_RowDeletingName="SqlGateConfigRowDeleting" msprop:Generator_RowChangingName="SqlGateConfigRowChanging" msprop:Generator_RowEvHandlerName="SqlGateConfigRowChangeEventHandler" msprop:Generator_RowDeletedName="SqlGateConfigRowDeleted" msprop:Generator_UserTableName="SqlGateConfig" msprop:Generator_RowChangedName="SqlGateConfigRowChanged" msprop:Generator_RowEvArgName="SqlGateConfigRowChangeEvent" msprop:Generator_RowClassName="SqlGateConfigRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ConnectionName" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ConnectionName" msprop:Generator_ColumnVarNameInTable="columnConnectionName" msprop:Generator_ColumnPropNameInTable="ConnectionNameColumn" msprop:Generator_UserColumnName="ConnectionName" type="xs:string" default="" />
+              <xs:element name="MaximumNumberOfAttempts" msprop:Generator_ColumnVarNameInTable="columnMaximumNumberOfAttempts" msprop:Generator_ColumnPropNameInRow="MaximumNumberOfAttempts" msprop:Generator_ColumnPropNameInTable="MaximumNumberOfAttemptsColumn" msprop:Generator_UserColumnName="MaximumNumberOfAttempts" type="xs:int" default="5" />
+              <xs:element name="AttemptDelay" msprop:Generator_ColumnVarNameInTable="columnAttemptDelay" msprop:Generator_ColumnPropNameInRow="AttemptDelay" msprop:Generator_ColumnPropNameInTable="AttemptDelayColumn" msprop:Generator_UserColumnName="AttemptDelay" type="xs:int" default="1000" />
+              <xs:element name="Timeout" msprop:Generator_ColumnVarNameInTable="columnTimeout" msprop:Generator_ColumnPropNameInRow="Timeout" msprop:Generator_ColumnPropNameInTable="TimeoutColumn" msprop:Generator_UserColumnName="Timeout" type="xs:int" default="30" />
+              <xs:element name="IsolationLevel" msprop:Generator_ColumnVarNameInTable="columnIsolationLevel" msprop:Generator_ColumnPropNameInRow="IsolationLevel" msprop:Generator_ColumnPropNameInTable="IsolationLevelColumn" msprop:Generator_UserColumnName="IsolationLevel" type="xs:int" default="-1" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
